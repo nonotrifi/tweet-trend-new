@@ -16,15 +16,16 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
+        stage('SonarCloud analysis') {
             environment {
-                scannerHome = tool 'valaxy-sonar-scanner'
+                scannerHome = tool 'valaxy-sonar-scanner' // the name you have given the Sonar Scanner (in Global Tool Configuration)
+            }
+            tools {
+                jdk "jdk17" // the name you have given the JDK installation in Global Tool Configuration
             }
             steps {
-                script {
-                    withSonarQubeEnv('valaxy-sonarqube-server') {
-                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.scanner.force-deprecated-java-version=true"
-                    }
+                withSonarQubeEnv(installationName: 'valaxy-sonarqube-server') {
+                    sh "${scannerHome}/bin/sonar-scanner -X"
                 }
             }
         }
