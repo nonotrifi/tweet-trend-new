@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title th:text="${pageTitle}"></title>
+    <title>Bienvenue à Paris</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,23 +30,39 @@
             bottom: 0;
             width: 100%;
         }
+        .info {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1 th:text="${pageTitle}"></h1>
+        <h1>Bienvenue à Paris</h1>
     </header>
     <main>
-        <p th:text="${message}"></p>
-        <p>Voici quelques informations supplémentaires :</p>
-        <ul>
-            <li>Nous offrons des produits et services de haute qualité.</li>
-            <li>Nous avons une équipe dévouée pour répondre à tous vos besoins.</li>
-            <li>N'hésitez pas à nous contacter pour toute demande d'information.</li>
-        </ul>
+        <div class="info">
+            <h2>À propos de Paris</h2>
+            <p>Paris, la capitale de la France, est une ville emblématique réputée pour son histoire, sa culture, sa cuisine et son architecture magnifique. C'est l'une des destinations les plus visitées au monde.</p>
+        </div>
+        <div class="info">
+            <h2>Les attractions principales</h2>
+            <ul>
+                <li>La Tour Eiffel</li>
+                <li>Le Louvre</li>
+                <li>Notre-Dame de Paris</li>
+                <li>Montmartre</li>
+                <li>Champs-Élysées</li>
+            </ul>
+        </div>
+        <div class="info">
+            <h2>Comment nous contacter</h2>
+            <p>Si vous avez des questions ou avez besoin d'informations supplémentaires sur Paris, n'hésitez pas à nous contacter :</p>
+            <p>Email: info@paris.fr</p>
+            <p>Téléphone: +33 1 23 45 67 89</p>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Notre Entreprise. Tous droits réservés.</p>
+        <p>&copy; 2024 Ville de Paris. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
