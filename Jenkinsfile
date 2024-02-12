@@ -15,7 +15,7 @@ pipeline {
                 sh 'mvn clean deploy'
             }
         }
-    }
+    } 
 
         // stage('SonarQube Analysis') {
         //     environment {
