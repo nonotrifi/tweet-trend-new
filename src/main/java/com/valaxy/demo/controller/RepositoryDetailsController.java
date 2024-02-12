@@ -21,6 +21,14 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.conf.ConfigurationBuilder;
 
+package com.stalin.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
 @RestController
 public class RepositoryDetailsController {
 
@@ -30,12 +38,18 @@ public class RepositoryDetailsController {
     @Autowired
     private Environment env;
 
-	@RequestMapping("/")
-	public String getRepos() throws IOException {
-		GitHub github = new GitHubBuilder().withPassword("valaxytech@gmail.com", "XXXXXXXX").build();
-		GHRepositorySearchBuilder builder = github.searchRepositories();
-		return "Bonjour je vous présente notre application de Test Java pour le FYC";
-	}
+	// @RequestMapping("/")
+	// public String getRepos() throws IOException {
+	// 	GitHub github = new GitHubBuilder().withPassword("valaxytech@gmail.com", "XXXXXXXX").build();
+	// 	GHRepositorySearchBuilder builder = github.searchRepositories();
+	// 	return "Bonjour je vous présente notre application de Test Java pour le FYC";
+	// }
+	 @GetMapping("/")
+    public String getRepos(Model model) {
+        model.addAttribute("pageTitle", "Bienvenue sur notre page d'accueil");
+        model.addAttribute("message", "Nous sommes heureux de vous accueillir sur notre site web !");
+        return "index"; // Retourne le nom de la vue HTML à afficher
+    }
 
 	@GetMapping("/trends")
 	public Map<String, String> getTwitterTrends(@RequestParam("placeid") String trendPlace, @RequestParam("count") String trendCount) {

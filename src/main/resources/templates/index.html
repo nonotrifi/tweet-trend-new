@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}"></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 th:text="${pageTitle}"></h1>
+    </header>
+    <main>
+        <p th:text="${message}"></p>
+        <p>Voici quelques informations supplémentaires :</p>
+        <ul>
+            <li>Nous offrons des produits et services de haute qualité.</li>
+            <li>Nous avons une équipe dévouée pour répondre à tous vos besoins.</li>
+            <li>N'hésitez pas à nous contacter pour toute demande d'information.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Notre Entreprise. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
