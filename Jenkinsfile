@@ -11,26 +11,22 @@ pipeline {
 
     stages {
         stage("build") {
-            steps  {
+            steps {
                 sh 'mvn clean deploy'
             }
         }
-    } 
 
-      stage('SonarQube Analysis') {
+        stage('SonarQube Analysis') {
             environment {
                 scannerHome = tool 'valaxy-sonar-scanner'
-                }
+            }
             steps {
                 script {
-                    
                     withSonarQubeEnv('valaxy-sonarqube-server') {
                         sh "${scannerHome}/bin/sonar-scanner -Dsonar.scanner.force-deprecated-java-version=true"
                     }
                 }
             }
-        } 
-
-    
+        }
+    }
 }
-
