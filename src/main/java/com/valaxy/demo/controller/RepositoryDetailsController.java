@@ -40,7 +40,7 @@ public class RepositoryDetailsController {
             "<head>\n" +
             "    <meta charset=\"UTF-8\">\n" +
             "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-            "    <title>Bienvenue à Paris</title>\n" +
+            "    <title>Application Java pour le FYC</title>\n" +
             "    <style>\n" +
             "        body {\n" +
             "            font-family: Arial, sans-serif;\n" +
@@ -74,32 +74,32 @@ public class RepositoryDetailsController {
             "</head>\n" +
             "<body>\n" +
             "    <header>\n" +
-            "        <h1>Bienvenue à Paris</h1>\n" +
+            "        <h1>Application Java pour le FYC</h1>\n" +
             "    </header>\n" +
             "    <main>\n" +
             "        <div class=\"info\">\n" +
-            "            <h2>À propos de Paris</h2>\n" +
-            "            <p>Paris, la capitale de la France, est une ville emblématique réputée pour son histoire, sa culture, sa cuisine et son architecture magnifique. C'est l'une des destinations les plus visitées au monde.</p>\n" +
+            "            <h2>Présenté par le groupe : Emmanuel, Ruben, Noé & Nourdine</h2>\n" +
+            "            <p>Bienvenue sur notre application Java spécialement conçue pour le FYC (Festival de l'Innovation et de la Créativité). Nous sommes un groupe d'étudiants en master 5 passionnés par le développement logiciel.</p>\n" +
             "        </div>\n" +
             "        <div class=\"info\">\n" +
-            "            <h2>Les attractions principales</h2>\n" +
+            "            <h2>Les fonctionnalités impressionnantes de notre application :</h2>\n" +
             "            <ul>\n" +
-            "                <li>La Tour Eiffel</li>\n" +
-            "                <li>Le Louvre</li>\n" +
-            "                <li>Notre-Dame de Paris</li>\n" +
-            "                <li>Montmartre</li>\n" +
-            "                <li>Champs-Élysées</li>\n" +
+            "                <li>Génération automatique de mèmes hilarants à partir de texte</li>\n" +
+            "                <li>Traduction instantanée de code Java en poésie française</li>\n" +
+            "                <li>Simulation de conversations entre intelligences artificielles pour animer les réunions ennuyeuses</li>\n" +
+            "                <li>Recommandation de musique personnalisée basée sur l'humeur de l'utilisateur et la météo actuelle</li>\n" +
+            "                <li>Conversion de café en code Java optimisé</li>\n" +
             "            </ul>\n" +
             "        </div>\n" +
             "        <div class=\"info\">\n" +
-            "            <h2>Comment nous contacter</h2>\n" +
-            "            <p>Si vous avez des questions ou avez besoin d'informations supplémentaires sur Paris, n'hésitez pas à nous contacter :</p>\n" +
-            "            <p>Email: info@paris.fr</p>\n" +
+            "            <h2>Contactez-nous pour une démo en direct !</h2>\n" +
+            "            <p>Envie d'en savoir plus sur notre incroyable application ? Contactez-nous dès maintenant pour une démonstration en direct :</p>\n" +
+            "            <p>Email: emmanuel.ruben.noe.nourdine@master5.fyc</p>\n" +
             "            <p>Téléphone: +33 1 23 45 67 89</p>\n" +
             "        </div>\n" +
             "    </main>\n" +
             "    <footer>\n" +
-            "        <p>&copy; 2024 Ville de Paris. Tous droits réservés.</p>\n" +
+            "        <p>&copy; 2024 Groupe Java FYC. Tous droits réservés.</p>\n" +
             "    </footer>\n" +
             "</body>\n" +
             "</html>";
