@@ -16,16 +16,19 @@ pipeline {
             }
         }
     } 
-
-        // stage('SonarQube Analysis') {
-        //     environment {
-        //         scannerHome = tool 'valaxy-sonar-scanner';
-        //     }
-        //     steps {
-        //         withSonarQubeEnv('valaxy-sonarqube-server') {
-        //         sh "${ScannerHome}/bin/sonar-scanner"
-        //     }
-        //     }
-            
-        // }
+    
+     stage('SonarQube Analysis') {
+            environment {
+                scannerHome = tool 'valaxy-sonar-scanner'
+                }
+            steps {
+                script {
+                    
+                    withSonarQubeEnv('valaxy-sonarqube-server') {
+                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.scanner.force-deprecated-java-version=true"
+                    }
+                }
+            }
+        } 
+    
 }
