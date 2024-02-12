@@ -16,8 +16,8 @@ pipeline {
             }
         }
     } 
-    
-     stage('SonarQube Analysis') {
+
+      stage('SonarQube Analysis') {
             environment {
                 scannerHome = tool 'valaxy-sonar-scanner'
                 }
@@ -30,5 +30,7 @@ pipeline {
                 }
             }
         } 
+
     
 }
+
