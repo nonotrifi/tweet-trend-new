@@ -33,15 +33,15 @@ pipeline {
 //     }
 //     }
 //   }
-//     stage(test) {
-//             steps{
-//                 script {
-//                     echo "------------------- Unit Test started --------------------------------"
-//                     sh 'mvn surefire-report:report'
-//                     echo "------------------- Unit Test completed --------------------------------"
-//                 }
-//             }
-//         }
+    // stage(test) {
+    //         steps{
+    //             script {
+    //                 echo "------------------- Unit Test started --------------------------------"
+    //                 sh 'mvn surefire-report:report'
+    //                 echo "------------------- Unit Test completed --------------------------------"
+    //             }
+    //         }
+    //     }
 
 //     stage("Jar Publish") {
 //             steps {
