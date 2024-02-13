@@ -1,6 +1,6 @@
 def registry = 'https://nono2307.jfrog.io'
 def imageName = 'nono2307.jfrog.io/valaxy-docker-local/ttrend' 
-def version   = '2.1.5'
+def version   = '2.1.6'
 pipeline {
     agent {
         node {
@@ -79,7 +79,7 @@ pipeline {
                echo '<--------------- Docker Build Ends --------------->'
             }
           }
-        } 
+        }
 
                 stage (" Docker Publish "){
             steps {
