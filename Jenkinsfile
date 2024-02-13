@@ -92,7 +92,7 @@ pipeline {
 
         stage ("Deploy") {
             steps {
-                script {
+                script { 
                     sh './deploy.sh'
                 }
             }
