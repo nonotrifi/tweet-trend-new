@@ -40,7 +40,7 @@ public class RepositoryDetailsController {
             "<head>\n" +
             "    <meta charset=\"UTF-8\">\n" +
             "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-            "    <title>Application Java pour le FYC</title>\n" +
+            "    <title>Application Java pour le FYC version 2</title>\n" +
             "    <style>\n" +
             "        body {\n" +
             "            font-family: Arial, sans-serif;\n" +
