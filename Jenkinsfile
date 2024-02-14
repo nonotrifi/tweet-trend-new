@@ -79,7 +79,7 @@ pipeline {
                echo '<--------------- Docker Build Ends --------------->'
             }
           }
-        }
+        } 
 
                 stage (" Docker Publish "){
             steps {
